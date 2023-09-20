@@ -7,7 +7,7 @@ REPO="https://raw.githubusercontent.com/myridwan/scriptvps/ipuk/"
 CDNF="https://raw.githubusercontent.com/IlhamStore23/vvip/ipuk"
 ###
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/IlhamStore23/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
